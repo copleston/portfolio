@@ -1,5 +1,5 @@
 ## Basic Configuration
-baseurl = "https://oliverjc.me"
+baseurl = "https://oliverjc.me/"
 languageCode = "en"
 
 title = "Oliver Copleston"
@@ -7,7 +7,7 @@ theme = "hyde-hyde"
 
 ## Hugo Built-in Features
 # disqusShortname = "your-disqus-shortname"
-googleAnalytics = "45005499"
+googleAnalytics = "UA-45005499-2"
 enableRobotsTXT = true
 
 # summarylength = 30
@@ -19,7 +19,7 @@ enableRobotsTXT = true
     author = "Oliver Copleston"
     title = "Oliver Copleston"
     description = "Code, Electronics, Lights"
-    authorimage = "//img/profile.png"
+    authorimage = "img/profile.png"
     dateformat = "Jan 2, 2006"
 
     # sidebar, copyright & license
@@ -40,11 +40,12 @@ enableRobotsTXT = true
 
     # Table of contents
     #toc = none, "hugo", or "tocbot"
+    #toc = tocbot
 
 ## Social Accounts
 [params.social]
     github = "oliverjc"
-    instagram = "oliver.copleston"
+    instagram = "oliverc.me"
     # xing = "<username>"
     linkedin = "copleston"
     twitter = "OllieGoesTwit"
@@ -56,13 +57,18 @@ enableRobotsTXT = true
 
 ## Main Menu
 [[menu.main]]
+    name = "Home"
+    weight = 100
+    identifier = "home"
+    url = "/"
+[[menu.main]]
     name = "Posts"
     weight = 100
     identifier = "posts"
     url = "/posts/"
 [[menu.main]]
     name = "Portfolio"
-    identifier = "portfolio"
+    identifier = "Portfolio"
     weight = 200
     url = "/portfolio/"
 [[menu.main]]
